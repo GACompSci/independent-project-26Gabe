@@ -1,4 +1,23 @@
+// Class: 
+// App (for UI setup, input receiving, and displaying output)
+// Attributes: 
+// BetAmnt (int)
+// Balance(int)
+// UserCardTotal(int)
+// DealerCardTotal(int)
+// userCards (array of Cards)
+//  dealerCards (array of Cards)
+// Constructors:
+//  App - sets up UI with HBOX, VBOX, with text: House Hand, Your Hand, Result
+// Also sets up buttons (HIT, STAND) , and a textfield for the user to input their bet, it will also update based off inputs like the balance and more.
+
+// Methods: 
+// userHit: returns void, calls hit method from the class Game
+// userStand: returns void,  calls stand method from class Game
+// getBetAmnt: returns int specifically the value of the variable BetAmnt
+
 public class App {
+    public int balance;
     public static void main(String[] args) {
       //54 cards in the deck
         Card[] deck = new Card[54];
@@ -18,5 +37,14 @@ public class App {
             System.out.println(Card.getNumCards());
         }
     }
+
+    public App(){
+
+    }
+    public int getBalance(){
+        return balance;
+    }
+
+    
 }
 //static is call it on the class
