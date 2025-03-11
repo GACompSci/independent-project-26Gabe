@@ -19,6 +19,7 @@
 public class App {
     public int balance;
     public static void main(String[] args) {
+    System.out.println("commit and synch");
       //54 cards in the deck
         Card[] deck = new Card[54];
         int i = 0;
@@ -45,6 +46,6 @@ public class App {
         return balance;
     }
 
-    
+
 }
 //static is call it on the class
